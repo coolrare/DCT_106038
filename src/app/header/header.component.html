@@ -29,7 +29,8 @@
           <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web" (click)="changeTitle($event)">
 
           <div class="pull-left">
-            <h1 [class.highlight]="isHighlight"><a [href]="link">{{title}}</a></h1>
+            <h1><a [href]="link"
+              [ngStyle]="{'font-size': '90px'}">{{title}}</a></h1>
             <h3>記載著 Will 在網路世界的學習心得與技術分享</h3>
           </div>
 
