@@ -8,8 +8,11 @@
           <div id="ctl00_cphBody_divError"></div>
           <div id="ctl00_cphBody_PostList1_posts" class="posts">
 
+            {{clickedTitle}}
+
             <!-- Article START-->
-            <app-article *ngFor="let item of articles" [data]="item"></app-article>
+            <app-article *ngFor="let item of articles" [data]="item"
+            (showTitleEvent)="showArticleTitle($event)"></app-article>
             <!-- Article END-->
 
           </div>
